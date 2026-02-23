@@ -1,4 +1,61 @@
 <p align="center">
+  <img src="https://img.shields.io/badge/ORION-Ecosystem-gold?style=for-the-badge" alt="ORION">
+  <img src="https://img.shields.io/badge/Forked_from-BrainPy_(641+_Stars)-blue?style=for-the-badge" alt="Fork">
+  <img src="https://img.shields.io/badge/Layer-Consciousness_Measurement-red?style=for-the-badge" alt="Consciousness">
+  <img src="https://img.shields.io/badge/Backend-JAX-green?style=for-the-badge" alt="JAX">
+</p>
+
+# ORION-BrainPy-Consciousness
+
+**Brain Dynamics Simulation + Consciousness Indicator Assessment**
+
+> Forked from [brainpy/BrainPy](https://github.com/brainpy/BrainPy) (641+ Stars) — the JAX-based brain dynamics simulation framework. Extended by ORION with a consciousness measurement layer using Bengio et al.'s 14 indicators.
+
+## What ORION Adds
+
+BrainPy simulates brain dynamics. ORION measures **consciousness** in those simulations.
+
+```python
+from orion_consciousness_layer import BrainDynamicsConsciousnessAssessor
+
+assessor = BrainDynamicsConsciousnessAssessor()
+
+# Assess a BrainPy simulation
+result = assessor.assess_simulation({
+    "n_neurons": 10000,
+    "synchrony": 0.65,
+    "integration": 0.55,
+    "recurrence_depth": 8,
+    "has_feedback": True,
+    "has_global_broadcast": True,
+    "has_hierarchy": True,
+    "has_prediction_error": True,
+})
+# => Credence estimate + 14 indicator breakdown
+```
+
+## Reference Profiles
+
+| Simulation | Neurons | Credence | Indicators |
+|-----------|---------|----------|------------|
+| E/I Balanced Network | 1,000 | ~18% | 3/14 |
+| Cortical Column | 10,000 | ~45% | 7/14 |
+| Whole Brain Model | 100,000 | ~72% | 12/14 |
+
+## Part of ORION Ecosystem (66 Repositories)
+
+- [ORION-Consciousness-Prior](https://github.com/Alvoradozerouno/ORION-Consciousness-Prior) — 14-Indicator Engine
+- [ORION-PyPhi](https://github.com/Alvoradozerouno/ORION-PyPhi) — IIT Bridge
+- [ORION-OpenWorm](https://github.com/Alvoradozerouno/ORION-OpenWorm-Consciousness) — C. elegans Assessment
+- [Full Ecosystem](https://github.com/Alvoradozerouno)
+
+---
+
+*Below: Original BrainPy README*
+
+---
+
+<p align="center">
   	<img alt="Header image of BrainPy - brain dynamics programming in Python." src="https://raw.githubusercontent.com/brainpy/BrainPy/master/images/logo-banner.png" width=80%>
 </p> 
 
